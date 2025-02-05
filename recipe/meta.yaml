@@ -1,5 +1,5 @@
 {% set name = "POPSregression" %}
-{% set version = "0.2.8.2" %}
+{% set version = "0.3.0" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/popsregression-{{ version }}.tar.gz
-  sha256: 539c22323d1be6dffcf09404fb776f7bbe0c56403b648de49ff7284172616b4e
+  sha256: f1d8fbb7a61b80d775ad0615c7ddb99abb39888523ce43c2ced82962d38c5fec
 
 build:
   noarch: python
