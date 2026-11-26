@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: POPSregression
-  version: "0.4.0"
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/popsregression-${{ version }}.tar.gz
-  sha256: 4f99efd1a0a58b83729b7b2817612db832012040895314a539af65fcba426f7c
+  sha256: 9bd6055400de03e81da7830b1d079f554ae3dcae3e08b2bac5916e5a7f749f0b
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -28,6 +28,7 @@ requirements:
     - scikit-learn >=1.6.1
     - scipy >=1.6.0
     - numpy >=1.20.0
+    - jax
 
 tests:
   - python:
